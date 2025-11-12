@@ -37,9 +37,9 @@
           class="items-center justify-between uppercase w-1/2 hidden lg:flex"
         >
           <a href="#">Trang chủ</a>
-          <a href="#">360 dự án</a>
-          <a href="#">tài liệu</a>
-          <a href="#">Mặt bằng dự án</a>
+          <a href="#duan">360 dự án</a>
+          <a href="#tailieu">tài liệu</a>
+          <a href="#matbang">Mặt bằng dự án</a>
         </div>
       </div>
       <img
@@ -238,7 +238,7 @@
       </div>
     </div>
     <!-- SECTION 3 -->
-    <div class="relative -mt-3 -ml-3">
+    <div class="relative -mt-3 -ml-3" id="duan">
       <img src="/public/images/tvc.png" class="w-full" loading="lazy" />
       <div
         class="absolute top-0 left-0 w-full h-full bg-[#005638] opacity-[0.85]"
@@ -386,6 +386,7 @@
         <div
           class="my-container mx-auto lg:-mt-40 animate__animated my-animated"
           data-animation="animate__zoomIn"
+          data-duration="1.5s"
         >
           <div class="relative">
             <img
@@ -404,6 +405,7 @@
                 --swiper-pagination-color: #fff;
               "
               class="swiper mySwiper2"
+              id="tailieu"
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -489,7 +491,10 @@
         <div
           class="my-container mx-auto grid grid-cols-12 lg:gap-20 mt-4 lg:mt-16 border-b border-[#C09F69] pb-4 lg:pb-10"
         >
-          <div class="col-span-12 lg:col-span-6 text-sm lg:text-base">
+          <div
+            class="col-span-12 lg:col-span-6 text-sm lg:text-base animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
+          >
             An Khánh Ecomony mang đến hệ thống tiện ích nội khu hoàn thiện, được
             quy hoạch hài hòa giữa thiên nhiên và đời sống hiện đại. Cư dân tận
             hưởng không gian công viên trung tâm, đường dạo bộ, sân thể thao,
@@ -497,7 +502,8 @@
             tầng mái – nơi mỗi ngày đều tràn đầy năng lượng và kết nối.
           </div>
           <div
-            class="col-span-12 lg:col-span-6 heading uppercase whitespace-nowrap text-center leading-[normal] mt-4 lg:mt-0"
+            class="col-span-12 lg:col-span-6 heading uppercase whitespace-nowrap text-center leading-[normal] mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInDown"
           >
             <span class="text-[32px] lg:text-[52px] heading text-yellow"
               >tiện ích</span
@@ -520,7 +526,8 @@
           class="my-container mx-auto grid grid-cols-12 lg:gap-20 mt-4 lg:mt-10"
         >
           <div
-            class="col-span-12 lg:col-span-6 uppercase lg:whitespace-nowrap leading-[normal] text-center mt-4 lg:mt-0"
+            class="col-span-12 lg:col-span-6 uppercase lg:whitespace-nowrap leading-[normal] text-center mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInUp"
           >
             <span class="text-base lg:text-[24px] text-[#C2DFD9]"
               >KHU ĐÔ THỊ SỞ HỮU CÔNG NGHỆ</span
@@ -543,7 +550,8 @@
             >
           </div>
           <div
-            class="col-span-12 lg:col-span-6 text-sm lg:text-base mt-4 lg:mt-0"
+            class="col-span-12 lg:col-span-6 text-sm lg:text-base mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInRight"
           >
             An Khánh Ecomony tiên phong mang công nghệ đèn lọc không khí bằng vi
             tảo sinh học vào toàn khu, giúp thanh lọc bụi mịn, hấp thụ CO₂ và
@@ -555,14 +563,15 @@
       </div>
       <div class="flex justify-center absolute bottom-10 left-0 w-full">
         <div
-          class="uppercase font-bold px-6 py-5 cursor-pointer"
+          class="uppercase font-bold px-6 py-5 cursor-pointer animate__animated my-animated"
           style="background: linear-gradient(180deg, #1f745d 0%, #012b1f 100%)"
+          data-animation="animate__fadeInUp"
         >
           ĐĂNG KÝ nhận thông tin
         </div>
       </div>
     </div>
-    <div class="relative">
+    <div class="relative" id="matbang">
       <img src="/public/images/matbangduan.jpg" loading="lazy" />
       <div
         class="absolute top-0 left-0 w-full aspect-[288/77]"
@@ -592,7 +601,10 @@
       </p>
       <div class="my-container mx-auto mt-8 lg:mt-16">
         <div class="grid grid-cols-12 text-[#005638] gap-5">
-          <div class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white">
+          <div
+            class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
+          >
             <img src="/public/images/room1.png" loading="lazy" />
             <p
               class="heading text-[26px] uppercase border-b border-[#005638] py-2"
@@ -602,7 +614,10 @@
             <p class="heading text-3xl font-bold mt-2">2 phòng ngủ</p>
             <p class="mt-4">DT thông thủy khoảng: 68.18 - 71.88m2</p>
           </div>
-          <div class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white">
+          <div
+            class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white animate__animated my-animated"
+            data-animation="animate__fadeInRight"
+          >
             <img src="/public/images/room1.png" loading="lazy" />
             <p
               class="heading text-[26px] uppercase border-b border-[#005638] py-2"
@@ -621,27 +636,42 @@
         FILE MẶT BẰNG DỰ ÁN CHẤT LƯỢNG CAO
       </p>
       <div
-        class="grid grid-cols-12 mt-6 gap-3 my-container mt-5 mx-auto px-4 lg:px-0"
+        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0"
       >
-        <div class="col-span-12 lg:col-span-3">
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+        >
           <p>Họ và tên</p>
           <div class="input mt-2">
             <input placeholder="Họ và tên" />
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-3">
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.2"
+        >
           <p>Số điện thoại</p>
           <div class="input mt-2">
             <input placeholder="Số điện thoại" />
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-3">
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.4"
+        >
           <p>Email:</p>
           <div class="input mt-2">
             <input placeholder="Email" />
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-3">
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.6"
+        >
           <p class="opacity-0">Email:</p>
           <div class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
             ĐĂNG KÝ NGAY
@@ -651,7 +681,10 @@
       <div class="flex justify-center lg:px-12 mt-8 lg:mt-0">
         <img
           src="/public/images/10lido.png"
-          class="border border-black"
+          class="border border-black animate__animated my-animated"
+          data-animation="animate__zoomIn"
+          width="1920"
+          height="1080"
           style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)"
           loading="lazy"
         />
