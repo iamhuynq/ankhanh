@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="/public/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -25,6 +26,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      .form-message { text-align: center; margin-top: 15px; font-weight: bold; }
+      .success { color: green; }
+      .error { color: red; }
+    </style>
   </head>
   <body class="text-white">
     <!-- SECTION 1 -->
@@ -209,32 +215,34 @@
           <span class="text-[#FFF5E5]">Đăng Ký</span><br />
           <span class="text-[#FFD18D]">nhận thông tin dự án</span>
         </div>
-        <div class="grid grid-cols-12 mt-6 gap-3">
+
+        <form class="grid grid-cols-12 mt-6 gap-3 contact-form" method="POST">
+          <div class="form-message col-span-12 lg:col-span-12"></div>
           <div class="col-span-12 lg:col-span-3">
             <p>Họ và tên</p>
             <div class="input mt-2">
-              <input placeholder="Họ và tên" />
+              <input placeholder="Họ và tên" name="fullname" required/>
             </div>
           </div>
           <div class="col-span-12 lg:col-span-3">
             <p>Số điện thoại</p>
             <div class="input mt-2">
-              <input placeholder="Số điện thoại" />
+              <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
             </div>
           </div>
           <div class="col-span-12 lg:col-span-3">
             <p>Email:</p>
             <div class="input mt-2">
-              <input placeholder="Email" />
+              <input placeholder="Email" name="email" required/>
             </div>
           </div>
           <div class="col-span-12 lg:col-span-3">
-            <p class="opacity-0">Email:</p>
-            <div class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
+            <p class="opacity-0">Tùy chọn đăng ký: <input type="hidden" name="type" value="Nhận thông tin dự án"/></p>
+            <button type="submit" class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
               ĐĂNG KÝ NGAY
-            </div>
+            </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- SECTION 3 -->
@@ -635,16 +643,17 @@
         tải trọn bộ<br />
         FILE MẶT BẰNG DỰ ÁN CHẤT LƯỢNG CAO
       </p>
-      <div
-        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0"
+      <form
+        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form" method="POST"
       >
+        <div class="form-message col-span-12 lg:col-span-12"></div>
         <div
           class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
           data-animation="animate__fadeInDown"
         >
           <p>Họ và tên</p>
           <div class="input mt-2">
-            <input placeholder="Họ và tên" />
+            <input placeholder="Họ và tên" name="fullname" required />
           </div>
         </div>
         <div
@@ -654,7 +663,7 @@
         >
           <p>Số điện thoại</p>
           <div class="input mt-2">
-            <input placeholder="Số điện thoại" />
+            <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
           </div>
         </div>
         <div
@@ -664,7 +673,7 @@
         >
           <p>Email:</p>
           <div class="input mt-2">
-            <input placeholder="Email" />
+            <input placeholder="Email" type="email" name="email" required/>
           </div>
         </div>
         <div
@@ -672,12 +681,12 @@
           data-animation="animate__fadeInDown"
           data-delay="0.6"
         >
-          <p class="opacity-0">Email:</p>
-          <div class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
+          <p class="opacity-0">Tùy chọn liên hệ: <input type="hidden" name="type" value="Tải File mặt bằng"/></p>
+          <button type="submit" class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
             ĐĂNG KÝ NGAY
-          </div>
+          </button>
         </div>
-      </div>
+      </form>
       <div class="flex justify-center lg:px-12 mt-8 lg:mt-0">
         <img
           src="/public/images/10lido.png"
@@ -692,24 +701,27 @@
       <div
         class="w-full lg:w-2/3 mx-auto grid grid-cols-12 lg:gap-20 pt-16 border-t border-[#DEEBDF] mt-12 pb-28"
       >
-        <div class="col-span-12 lg:col-span-6 px-4 lg:px-0">
+        <form class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form" method="POST">
           <div
             class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] whitespace-nowrap text-center lg:text-left"
           >
             Đăng ký nhận thông tin
           </div>
+          <div class="form-message col-span-12 lg:col-span-12"></div>
           <div class="transparent-input mt-7">
-            <input placeholder="Họ và tên" />
+            <input placeholder="Họ và tên" type="text" name="fullname" required/>
           </div>
           <div class="transparent-input mt-2">
-            <input placeholder="Số điện thoại" />
+            <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
+            <input type="hidden" name="email" value="an_danh@ankhanhecomony.vn"/>
+            <input type="hidden" name="type" value="Đăng ký nhận thông tin"/>
           </div>
           <div class="mt-8 flex justify-center lg:justify-start">
-            <div class="cursor-pointer bg-gold py-4 px-14 inline-block">
+            <button type="submit" class="cursor-pointer bg-gold py-4 px-14 inline-block">
               Gửi thông tin
-            </div>
+            </button>
           </div>
-        </div>
+        </form>
         <div class="col-span-12 lg:col-span-6 px-4 lg:px-0 mt-8 lg:mt-0">
           <div
             class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] text-center lg:text-left"
@@ -774,6 +786,39 @@
         thumbs: {
           swiper: swiper,
         },
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.contact-form').on('submit', function(e) {
+          let _form = $(this);
+          e.preventDefault();
+
+          let formData = $(this).serialize();
+          let messageBox = $('.form-message', this);
+
+          messageBox.removeClass('success error').text('Đang gửi thông tin...');
+
+          $.ajax({
+            url: '/form.php',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function(res, textStatus, xhr) {
+              if (xhr.status === 200) {
+                messageBox.addClass('success').text('✅ ' + res.message);
+                _form[0].reset();
+              } else {
+                messageBox.addClass('error').text('❌ ' + res.message);
+              }
+            },
+            error: function(xhr) {
+              const msg = xhr.responseJSON?.message || '⚠️ Lỗi hệ thống. Vui lòng thử lại.';
+              messageBox.addClass('error').text(msg);
+            }
+          });
+
+        });
       });
     </script>
   </body>
