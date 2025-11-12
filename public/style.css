@@ -723,6 +723,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.aspect-\[1740\/974\] {
+  aspect-ratio: 1740/974;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -1251,17 +1255,46 @@ input {
 }
 
 .form-message {
-  text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
-.success {
-  color: green;
+.form-message.success {
+  color: #8dff8d;
 }
 
-.error {
-  color: red;
+.form-message.error {
+  color: #ff7171;
+}
+
+button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Spinner animation */
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 768px) {
