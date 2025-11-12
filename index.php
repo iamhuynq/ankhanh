@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Khánh Economy - Hơi Thở Xanh Sống An Lành</title>
+    <link rel="preload" href="/public/images/banner.jpg" as="image" />
+    <link rel="preload" href="/public/style.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="/public/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="text-white">
+    <!-- SECTION 1 -->
+    <div class="relative z-20">
+      <div
+        class="flex justify-between my-container absolute top-7 left-1/2 transform -translate-x-1/2 px-4 lg:px-0"
+      >
+        <img src="/public/images/logo.png" loading="lazy" />
+        <div
+          class="items-center justify-between uppercase w-1/2 hidden lg:flex"
+        >
+          <a href="#">Trang chủ</a>
+          <a href="#duan">360 dự án</a>
+          <a href="#tailieu">tài liệu</a>
+          <a href="#matbang">Mặt bằng dự án</a>
+        </div>
+      </div>
+      <img
+        src="/public/images/banner.jpg"
+        class="w-full aspect-[2/3] lg:aspect-auto object-cover"
+        loading="eager"
+        fetchpriority="high"
+        width="1665"
+        height="937"
+      />
+      <div class="absolute top-36 left-1/2 transform -translate-x-1/2">
+        <img
+          src="/public/images/economy.png"
+          class="animate__animated animate__zoomIn"
+          loading="lazy"
+        />
+      </div>
+      <div class="absolute top-40 left-1/2 -translate-x-1/2">
+        <img
+          src="/public/images/in-banner.png"
+          class="animate__animated animate__zoomIn"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <!-- SECTION 2 -->
+    <div class="section-2 bg-cover bg-no-repeat relative pb-20 z-10">
+      <div
+        class="lg:flex items-center justify-between gap-14 -mt-14 overflow-hidden"
+      >
+        <div class="flex-1">
+          <img
+            src="/public/images/section-2.png"
+            class="w-full animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
+            loading="lazy"
+            width="67"
+            height="65"
+          />
+        </div>
+        <div class="flex-1 px-4 lg:px-0">
+          <div
+            class="lg:pl-12 animate__animated my-animated"
+            data-animation="animate__fadeInDown"
+          >
+            <img
+              src="/public/images/105.png"
+              loading="lazy"
+              class="mx-auto lg:mx-0"
+            />
+            <p class="text-sm mt-8 lg:w-2/3">
+              An Khánh Ecomony tọa lạc tại trung tâm khu nhà giàu phía Tây Hà
+              Nội, liền kề Mailand – Đại lộ Thăng Long.<br /><br />
+              Dự án thừa hưởng hệ sinh thái tiện ích hoàn chỉnh và cộng đồng cư
+              dân cao cấp đã hiện hữu, bảo chứng giá trị bất động sản bền vững.
+              Với lợi thế kết nối nhanh tới Metro 5 – Metro 7 – Vành đai 4 và
+              chỉ vài phút đến trường quốc tế Edison – Việt Mỹ, sân golf
+              Mailand, Vincom Mega Mall, Vinmec, Thiên đường Bảo Sơn, An Khánh
+              Ecomony mang đến phong cách sống riêng tư – xanh – khép kín tiện
+              ích dành cho những chủ nhân xứng tầm.
+            </p>
+          </div>
+          <div class="mt-8">
+            <div class="h-[2px] bg-[#DEEBDF] relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                class="absolute left-0 top-0 transform -translate-y-1/2"
+              >
+                <circle cx="7" cy="7" r="7" fill="url(#paint0_linear_4_289)" />
+                <circle cx="7" cy="7" r="7" fill="black" fill-opacity="0.2" />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_4_289"
+                    x1="0"
+                    y1="7"
+                    x2="5.59044"
+                    y2="7"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FCDDB2" />
+                    <stop offset="1" stop-color="#B38F61" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div
+              class="lg:pl-12 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
+              <p class="heading uppercase text-[32px] text-yellow">
+                tổng quan dự án
+              </p>
+              <p class="text-sm mt-1 lg:w-2/3">
+                Được định vị trở thành khu đô thị liền kề – biệt thự mới tại
+                trung tâm phía Tây Hà Nội, An Khánh Economy là dấu ấn tiên phong
+                trong việc kiến tạo môi trường sống xanh, hiện đại và đồng bộ
+                tiện ích.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="lg:absolute top-0 left-0 w-full px-4 lg:px-0">
+          <div
+            class="my-container mx-auto md:flex justify-between gap-28 text-sm mt-8 lg:mt-0"
+          >
+            <div
+              class="pl-5 lg:h-[320px] border-linear animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
+              <div class="text-yellow uppercase font-semibold">Tên dự án</div>
+              <p class="text-white mt-1">
+                An Khánh Economy<br />
+                Chủ đầu tư: Công ty Cổ phần Đầu tư<br />
+                Phát triển Đô thị Mới Hà Nội (HANDI)<br />
+                Đơn vị phát triển: Reatimes Holding
+              </p>
+            </div>
+            <div
+              class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+              data-delay="0.5s"
+            >
+              <div class="text-yellow uppercase font-semibold">
+                Vị trí - quy mô
+              </div>
+              <p class="text-white mt-1">
+                Lô X6, Lê Văn Lương kéo dài – Hoài Đức, Hà Nội <br />Quy mô: 3ha
+                – 150 sản phẩm liền kề & biệt thự<br />
+                Loại hình: Nhà liền kề, biệt thự, shophouse <br />Pháp lý: Sở
+                hữu lâu dài
+              </p>
+            </div>
+            <div
+              class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+              data-delay="1s"
+            >
+              <div class="text-yellow uppercase font-semibold">
+                Cơ cấu sản phẩm
+              </div>
+              <p class="text-white mt-1">
+                71 liền kề (48–116m²) <br />
+                34 biệt thự (76–193m²)<br />
+                Pháp lý: Sở hữu lâu dài
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="w-full"
+          src="/public/images/tongquan.png"
+          loading="lazy"
+          width="1665"
+          height="919"
+        />
+      </div>
+      <div class="my-container mx-auto px-4 lg:px-0">
+        <div
+          class="uppercase heading text-[24px] lg:text-[36px] leading-8 animate__animated my-animated"
+          data-animation="animate__fadeInLeft"
+        >
+          <span class="text-[#FFF5E5]">Đăng Ký</span><br />
+          <span class="text-[#FFD18D]">nhận thông tin dự án</span>
+        </div>
+
+        <form class="grid grid-cols-12 mt-6 gap-3 contact-form">
+          <div class="form-message col-span-12"></div>
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+          >
+            <p>Họ và tên</p>
+            <div class="input mt-2">
+              <input placeholder="Họ và tên" name="fullname" required />
+            </div>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.2s"
+          >
+            <p>Số điện thoại</p>
+            <div class="input mt-2">
+              <input
+                placeholder="Số điện thoại"
+                name="phone"
+                required
+                pattern="[0-9]{9,12}"
+              />
+            </div>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.4s"
+          >
+            <p>Email:</p>
+            <div class="input mt-2">
+              <input placeholder="Email" name="email" required />
+            </div>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.6s"
+          >
+            <p class="opacity-0">
+              Tùy chọn đăng ký:
+              <input type="hidden" name="type" value="Nhận thông tin dự án" />
+            </p>
+            <button
+              type="submit"
+              class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer w-full"
+            >
+              ĐĂNG KÝ NGAY
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- SECTION 3 -->
+    <div class="relative aspect-[1740/974]" id="duan">
+      <iframe
+        width="1691"
+        height="951"
+        src="https://www.youtube.com/embed/O0Atuc2A_1g?autoplay=1&mute=1&controls=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="absolute top-0 left-0 w-full h-full"
+      ></iframe>
+    </div>
+    <!-- SECTION 4 -->
+    <div class="section-4 pb-10 lg:pb-40">
+      <img
+        src="/public/images/map.png"
+        loading="lazy"
+        class="w-full"
+        width="3116"
+        height="1641"
+      />
+      <div
+        class="my-container mx-auto lg:flex text-sm gap-28 items-center mt-1 px-4 lg:px-0"
+      >
+        <div
+          class="uppercase whitespace-nowrap text-center leading-[normal] animate__animated my-animated"
+          data-animation="animate__fadeInLeft"
+        >
+          <span class="text-[32px] lg:text-[52px] heading text-yellow"
+            >Vị trí</span
+          >
+          <span class="text-[24px] lg:text-[32px] heading">Tinh hoa</span>
+          <div class="flex items-center justify-center lg:justify-start">
+            <span class="text-[24px] lg:text-[32px] heading mr-2"
+              >Tâm điểm</span
+            >
+            <span class="text-[32px] lg:text-[52px] heading text-yellow"
+              >kết nối</span
+            >
+          </div>
+          <span class="text-[24px] pt-1 text-[#C2DFD9]">phía tây hà nội</span>
+        </div>
+
+        <p
+          class="mt-4 lg:mt-0 animate__animated my-animated"
+          data-animation="animate__fadeInDown"
+        >
+          Nằm tại trung tâm khu vực phát triển năng động bậc nhất phía Tây Thủ
+          đô, An Khánh Ecomony sở hữu vị trí giao thoa chiến lược với mạng lưới
+          hạ tầng đồng bộ và hiện đại. Dự án liền kề Đại lộ Thăng Long, kết nối
+          nhanh tới Vành đai 3.5 – Vành đai 4 cùng tuyến Metro số 5 & 7 trong
+          tương lai. Từ đây, cư dân chỉ mất ít phút để tiếp cận các trung tâm
+          hành chính, giáo dục, y tế, thương mại và vui chơi giải trí hàng đầu
+          Hà Nội.
+        </p>
+      </div>
+      <div class="relative mt-12">
+        <div class="w-1/2">
+          <div class="h-[2px] bg-[#DEEBDF] relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              class="absolute right-0 top-0 transform -translate-y-1/2"
+            >
+              <circle cx="7" cy="7" r="7" fill="url(#paint0_linear_4_289)" />
+              <circle cx="7" cy="7" r="7" fill="black" fill-opacity="0.2" />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_4_289"
+                  x1="0"
+                  y1="7"
+                  x2="5.59044"
+                  y2="7"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FCDDB2" />
+                  <stop offset="1" stop-color="#B38F61" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <img
+          src="/public/images/lienketvung.png"
+          loading="lazy"
+          class="w-full mt-10"
+          width="2173"
+          height="1423"
+        />
+        <div class="lg:absolute top-20 left-0 w-full">
+          <div
+            class="my-container mx-auto lg:flex gap-32 items-center px-4 lg:px-0"
+          >
+            <p
+              class="text-sm animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
+              Từ An Khánh Ecomony, cư dân dễ dàng tiếp cận mọi tiện ích cao cấp
+              chỉ trong vài phút di chuyển.<br />
+              Trong bán kính 1–3 km, bao quanh dự án là hệ thống trường học quốc
+              tế, công viên, sân golf, trung tâm thương mại và khu thể thao, đáp
+              ứng trọn vẹn nhu cầu học tập, giải trí, rèn luyện và nghỉ dưỡng
+              hằng ngày.
+              <br />
+              Trong bán kính 5–10 km, dự án kết nối nhanh tới Sân vận động Mỹ
+              Đình, Trung tâm Hội nghị Quốc gia, Aeon Mall Hà Đông, Vincom Mega
+              Mall, Vinmec Smart City, cùng nhiều đầu mối giao thông huyết
+              mạch.<br />Từ vị trí này, cư dân An Khánh Ecomony có thể di chuyển
+              linh hoạt đến khu trung tâm thành phố chỉ 15–20 phút, tận hưởng
+              cuộc sống cân bằng giữa hiện đại và thiên nhiên, giữa kết nối và
+              riêng tư.
+            </p>
+            <div
+              class="uppercase whitespace-nowrap leading-[auto] lg:leading-[36px] mt-8 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInRight"
+            >
+              <span class="text-[32px] lg:text-[52px] heading text-yellow"
+                >liên kết vùng</span
+              >
+              <br />
+              <span class="text-[32px] lg:text-[52px] heading text-yellow ml-9"
+                >Hoàn hảo</span
+              >
+              <span class="text-[24px] lg:text-[32px] heading">Kết nối</span>
+              <br />
+              <span class="text-[24px] text-[#C2DFD9] ml-20"
+                >ĐA CHIỀU TIỆN ÍCH</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 5 -->
+    <div class="section-5 relative">
+      <img
+        src="/public/images/section5-bg.png"
+        class="w-full hidden lg:block"
+        loading="lazy"
+      />
+      <div
+        class="lg:absolute top-0 left-0 w-full px-4 lg:px-0 pb-[450px] lg:pb-0 pt-4 lg:pt-0"
+      >
+        <div
+          class="my-container mx-auto lg:-mt-40 animate__animated my-animated"
+          data-animation="animate__zoomIn"
+          data-duration="1.5s"
+        >
+          <div class="relative">
+            <img
+              src="/public/images/arrow.png"
+              class="absolute -left-20 top-1/2 cursor-pointer arrow-prev hidden lg:block"
+              loading="lazy"
+            />
+            <img
+              src="/public/images/arrow.png"
+              class="absolute -right-20 top-1/2 transform rotate-180 cursor-pointer arrow-next hidden lg:block"
+              loading="lazy"
+            />
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper2"
+              id="tailieu"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-1.png" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-2.jpg" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-3.jpg" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-4.jpg" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-5.jpg" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-6.png" loading="lazy" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/public/images/slide-7.jpg" loading="lazy" />
+                </div>
+              </div>
+              <div class="swiper-button-next lg:!hidden"></div>
+              <div class="swiper-button-prev lg:!hidden"></div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-1.png"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-2.jpg"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-3.jpg"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-4.jpg"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-5.jpg"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-6.png"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/public/images/slide-7.jpg"
+                  class="object-cover w-full aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-container mx-auto grid grid-cols-12 lg:gap-20 mt-4 lg:mt-16 border-b border-[#C09F69] pb-4 lg:pb-10"
+        >
+          <div
+            class="col-span-12 lg:col-span-6 text-sm lg:text-base animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
+          >
+            An Khánh Ecomony mang đến hệ thống tiện ích nội khu hoàn thiện, được
+            quy hoạch hài hòa giữa thiên nhiên và đời sống hiện đại. Cư dân tận
+            hưởng không gian công viên trung tâm, đường dạo bộ, sân thể thao,
+            vườn thiền, khu vui chơi trẻ em, vườn kết nối cộng đồng và khu BBQ
+            tầng mái – nơi mỗi ngày đều tràn đầy năng lượng và kết nối.
+          </div>
+          <div
+            class="col-span-12 lg:col-span-6 heading uppercase whitespace-nowrap text-center leading-[normal] mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInDown"
+          >
+            <span class="text-[32px] lg:text-[52px] heading text-yellow"
+              >tiện ích</span
+            >
+            <span class="text-[32px] heading">Đầy đủ</span>
+            <div class="flex items-center justify-center lg:justify-start">
+              <span class="text-[24px] lg:text-[32px] heading mr-2"
+                >Thừa hưởng</span
+              >
+              <span class="text-[32px] lg:text-[52px] heading text-yellow"
+                >Giá trị sống</span
+              >
+            </div>
+            <span class="text-[32px] lg:text-[52px] heading text-yellow pt-1"
+              >Đẳng cấp</span
+            >
+          </div>
+        </div>
+        <div
+          class="my-container mx-auto grid grid-cols-12 lg:gap-20 mt-4 lg:mt-10"
+        >
+          <div
+            class="col-span-12 lg:col-span-6 uppercase lg:whitespace-nowrap leading-[normal] text-center mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInUp"
+          >
+            <span class="text-base lg:text-[24px] text-[#C2DFD9]"
+              >KHU ĐÔ THỊ SỞ HỮU CÔNG NGHỆ</span
+            >
+            <br />
+            <span class="text-[32px] lg:text-[52px] heading text-yellow"
+              >lọc không khí</span
+            >
+            <div class="flex items-center justify-center lg:justify-start">
+              <span
+                class="text-3xl lg:text-[52px] heading text-yellow mr-2 lg:pt-3"
+                >Từ tảo</span
+              >
+              <span class="text-xl lg:text-[32px] heading lg:pt-3"
+                >Đầu tiên & duy nhất</span
+              >
+            </div>
+            <span class="text-[24px] lg:text-[32px] heading"
+              >Trong khu vực</span
+            >
+          </div>
+          <div
+            class="col-span-12 lg:col-span-6 text-sm lg:text-base mt-4 lg:mt-0 animate__animated my-animated"
+            data-animation="animate__fadeInRight"
+          >
+            An Khánh Ecomony tiên phong mang công nghệ đèn lọc không khí bằng vi
+            tảo sinh học vào toàn khu, giúp thanh lọc bụi mịn, hấp thụ CO₂ và
+            tái tạo oxy tự nhiên. Giải pháp xanh hiện đại này kiến tạo bầu không
+            khí trong lành, mang lại năng lượng sống tích cực cho cộng đồng cư
+            dân.
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center absolute bottom-10 left-0 w-full">
+        <div
+          class="uppercase font-bold px-6 py-5 cursor-pointer animate__animated my-animated"
+          style="background: linear-gradient(180deg, #1f745d 0%, #012b1f 100%)"
+          data-animation="animate__fadeInUp"
+        >
+          ĐĂNG KÝ nhận thông tin
+        </div>
+      </div>
+    </div>
+    <div class="relative" id="matbang">
+      <img src="/public/images/matbangduan.jpg" loading="lazy" />
+      <div
+        class="absolute top-0 left-0 w-full aspect-[288/77]"
+        style="
+          background: linear-gradient(
+            357deg,
+            rgba(13, 89, 66, 0) 2.43%,
+            #113926 97.86%
+          );
+        "
+      >
+        <div
+          class="my-container mx-auto heading text-[24px] lg:text-[48px] uppercase leading-normal pt-4 lg:pt-24 px-4 lg:p-0"
+        >
+          <div class="leading-[normal]">
+            MẶT BằNG <br /><span class="ml-16">tổng dự án</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 6 -->
+    <div class="section-6 bg-cover bg-no-repeat pt-8 lg:pt-16">
+        <?php /* ẩn tạm vì KH chưa có thông tin
+      <p
+        class="uppercase heading text-[32px] lg:text-[48px] text-[#C2DFD9] text-center"
+      >
+        MẶT BẰNG BÓC MÁi
+      </p>
+      <div class="my-container mx-auto mt-8 lg:mt-16">
+        <div class="grid grid-cols-12 text-[#005638] gap-5">
+          <div
+            class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
+          >
+            <img src="/public/images/room1.png" loading="lazy" />
+            <p
+              class="heading text-[26px] uppercase border-b border-[#005638] py-2"
+            >
+              căn BT06
+            </p>
+            <p class="heading text-3xl font-bold mt-2">2 phòng ngủ</p>
+            <p class="mt-4">DT thông thủy khoảng: 68.18 - 71.88m2</p>
+          </div>
+          <div
+            class="col-span-12 lg:col-span-6 pb-7 pt-3 px-8 bg-white animate__animated my-animated"
+            data-animation="animate__fadeInRight"
+          >
+            <img src="/public/images/room1.png" loading="lazy" />
+            <p
+              class="heading text-[26px] uppercase border-b border-[#005638] py-2"
+            >
+              căn BT06
+            </p>
+            <p class="heading text-3xl font-bold mt-2">2 phòng ngủ</p>
+            <p class="mt-4">DT thông thủy khoảng: 68.18 - 71.88m2</p>
+          </div>
+        </div>
+      </div>
+        */ ?>
+      <p
+        class="uppercase heading text-xl lg:text-[36px] text-center leading-8 mt-9 animate__animated my-animated"
+        data-animation="animate__zoomIn"
+      >
+        tải trọn bộ<br />
+        FILE MẶT BẰNG DỰ ÁN CHẤT LƯỢNG CAO
+      </p>
+      <form
+        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form"
+      >
+        <div class="form-message col-span-12"></div>
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+        >
+          <p>Họ và tên</p>
+          <div class="input mt-2">
+            <input placeholder="Họ và tên" name="fullname" required />
+          </div>
+        </div>
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.2"
+        >
+          <p>Số điện thoại</p>
+          <div class="input mt-2">
+            <input
+              placeholder="Số điện thoại"
+              name="phone"
+              required
+              pattern="[0-9]{9,12}"
+            />
+          </div>
+        </div>
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.4"
+        >
+          <p>Email:</p>
+          <div class="input mt-2">
+            <input placeholder="Email" type="email" name="email" required />
+          </div>
+        </div>
+        <div
+          class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+          data-animation="animate__fadeInDown"
+          data-delay="0.6"
+        >
+          <p class="opacity-0">
+            Tùy chọn liên hệ:
+            <input type="hidden" name="type" value="Tải File mặt bằng" />
+          </p>
+          <button
+            type="submit"
+            class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer w-full"
+          >
+            ĐĂNG KÝ NGAY
+          </button>
+        </div>
+      </form>
+      <div class="flex justify-center lg:px-12 mt-8 lg:mt-0">
+        <img
+          src="/public/images/10lido.png"
+          class="border border-black animate__animated my-animated"
+          data-animation="animate__zoomIn"
+          width="1920"
+          height="1080"
+          style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)"
+          loading="lazy"
+        />
+      </div>
+      <div
+        class="w-full lg:w-2/3 mx-auto grid grid-cols-12 lg:gap-20 pt-16 border-t border-[#DEEBDF] mt-12 pb-28"
+      >
+        <form class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form">
+          <div
+            class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] whitespace-nowrap text-center lg:text-left"
+          >
+            Đăng ký nhận thông tin
+          </div>
+          <div class="form-message col-span-12"></div>
+          <div class="transparent-input mt-7">
+            <input
+              placeholder="Họ và tên"
+              type="text"
+              name="fullname"
+              required
+            />
+          </div>
+          <div class="transparent-input mt-2">
+            <input
+              placeholder="Số điện thoại"
+              name="phone"
+              required
+              pattern="[0-9]{9,12}"
+            />
+            <input
+              type="hidden"
+              name="email"
+              value="an_danh@ankhanhecomony.vn"
+            />
+            <input type="hidden" name="type" value="Đăng ký nhận thông tin" />
+          </div>
+          <div class="mt-8 flex justify-center lg:justify-start">
+            <button
+              type="submit"
+              class="cursor-pointer bg-gold py-4 px-14 inline-block"
+            >
+              Gửi thông tin
+            </button>
+          </div>
+        </form>
+        <div class="col-span-12 lg:col-span-6 px-4 lg:px-0 mt-8 lg:mt-0">
+          <div
+            class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] text-center lg:text-left"
+          >
+            Liên hệ
+          </div>
+          <p class="mt-12">Địa Chỉ: 108 Nguyễn Trãi, Thanh Xuân, Hà Nội </p>
+          <p class="mt-2">Hotline: 0936 xxx xxx</p>
+          <p class="mt-2">Website: https://www.tig.vn/</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".animate__animated");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const animation = el.dataset.animation;
+                const delay = el.dataset.delay || "0s";
+                const duration = el.dataset.duration || "1s";
+
+                el.style.setProperty("--animate-delay", delay);
+                el.style.setProperty("--animate-duration", duration);
+
+                el.classList.remove("is-visible", animation);
+
+                const delayMs = parseFloat(delay) * 1000;
+                setTimeout(() => {
+                  el.classList.add("is-visible", animation);
+                }, delayMs);
+
+                observer.unobserve(el);
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+          }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+
+        const forms = document.querySelectorAll(".contact-form");
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const messageBox = form.querySelector(".form-message");
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            const formData = new FormData(form);
+
+            // Hiển thị trạng thái đang gửi
+            messageBox.classList.remove("success", "error");
+            messageBox.textContent = "Đang gửi thông tin...";
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span class="spinner"></span> Đang gửi...`;
+
+            try {
+              const response = await fetch("/form.php", {
+                method: "POST",
+                body: formData,
+              });
+
+              const res = await response.json();
+
+              if (response.ok) {
+                messageBox.classList.add("success");
+                messageBox.textContent = "✅ " + res.message;
+                form.reset();
+              } else {
+                messageBox.classList.add("error");
+                messageBox.textContent =
+                  "❌ " + (res.message || "Gửi thất bại!");
+              }
+            } catch (error) {
+              messageBox.classList.add("error");
+              messageBox.textContent = "⚠️ Lỗi hệ thống. Vui lòng thử lại.";
+              console.error("Form submit error:", error);
+            } finally {
+              // Khôi phục lại nút
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalBtnText;
+            }
+          });
+        });
+      });
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: window.innerWidth < 1024 ? 5 : 7,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl:
+            window.innerWidth < 1024 ? ".swiper-button-next" : ".arrow-next",
+          prevEl:
+            window.innerWidth < 1024 ? ".swiper-button-prev" : ".arrow-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>
