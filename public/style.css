@@ -1059,6 +1059,10 @@ video {
   opacity: 0.85;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
