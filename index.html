@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="/public/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -26,11 +25,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <style>
-      .form-message { text-align: center; margin-top: 15px; font-weight: bold; }
-      .success { color: green; }
-      .error { color: red; }
-    </style>
   </head>
   <body class="text-white">
     <!-- SECTION 1 -->
@@ -211,34 +205,63 @@
         />
       </div>
       <div class="my-container mx-auto px-4 lg:px-0">
-        <div class="uppercase heading text-[24px] lg:text-[36px] leading-8">
+        <div
+          class="uppercase heading text-[24px] lg:text-[36px] leading-8 animate__animated my-animated"
+          data-animation="animate__fadeInLeft"
+        >
           <span class="text-[#FFF5E5]">Đăng Ký</span><br />
           <span class="text-[#FFD18D]">nhận thông tin dự án</span>
         </div>
 
         <form class="grid grid-cols-12 mt-6 gap-3 contact-form" method="POST">
           <div class="form-message col-span-12 lg:col-span-12"></div>
-          <div class="col-span-12 lg:col-span-3">
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+          >
             <p>Họ và tên</p>
             <div class="input mt-2">
-              <input placeholder="Họ và tên" name="fullname" required/>
+              <input placeholder="Họ và tên" name="fullname" required />
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-3">
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.2s"
+          >
             <p>Số điện thoại</p>
             <div class="input mt-2">
-              <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
+              <input
+                placeholder="Số điện thoại"
+                name="phone"
+                required
+                pattern="[0-9]{9,12}"
+              />
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-3">
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.4s"
+          >
             <p>Email:</p>
             <div class="input mt-2">
-              <input placeholder="Email" name="email" required/>
+              <input placeholder="Email" name="email" required />
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-3">
-            <p class="opacity-0">Tùy chọn đăng ký: <input type="hidden" name="type" value="Nhận thông tin dự án"/></p>
-            <button type="submit" class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
+          <div
+            class="col-span-12 lg:col-span-3 animate__animated my-animated animate__faster"
+            data-animation="animate__fadeInDown"
+            data-delay="0.6s"
+          >
+            <p class="opacity-0">
+              Tùy chọn đăng ký:
+              <input type="hidden" name="type" value="Nhận thông tin dự án" />
+            </p>
+            <button
+              type="submit"
+              class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer w-full"
+            >
               ĐĂNG KÝ NGAY
             </button>
           </div>
@@ -638,13 +661,15 @@
         </div>
       </div>
       <p
-        class="uppercase heading text-xl lg:text-[36px] text-center leading-8 mt-9"
+        class="uppercase heading text-xl lg:text-[36px] text-center leading-8 mt-9 animate__animated my-animated"
+        data-animation="animate__zoomIn"
       >
         tải trọn bộ<br />
         FILE MẶT BẰNG DỰ ÁN CHẤT LƯỢNG CAO
       </p>
       <form
-        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form" method="POST"
+        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form"
+        method="POST"
       >
         <div class="form-message col-span-12 lg:col-span-12"></div>
         <div
@@ -663,7 +688,12 @@
         >
           <p>Số điện thoại</p>
           <div class="input mt-2">
-            <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
+            <input
+              placeholder="Số điện thoại"
+              name="phone"
+              required
+              pattern="[0-9]{9,12}"
+            />
           </div>
         </div>
         <div
@@ -673,7 +703,7 @@
         >
           <p>Email:</p>
           <div class="input mt-2">
-            <input placeholder="Email" type="email" name="email" required/>
+            <input placeholder="Email" type="email" name="email" required />
           </div>
         </div>
         <div
@@ -681,8 +711,14 @@
           data-animation="animate__fadeInDown"
           data-delay="0.6"
         >
-          <p class="opacity-0">Tùy chọn liên hệ: <input type="hidden" name="type" value="Tải File mặt bằng"/></p>
-          <button type="submit" class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer">
+          <p class="opacity-0">
+            Tùy chọn liên hệ:
+            <input type="hidden" name="type" value="Tải File mặt bằng" />
+          </p>
+          <button
+            type="submit"
+            class="bg-[#005638] mt-2 py-[17px] text-center cursor-pointer w-full"
+          >
             ĐĂNG KÝ NGAY
           </button>
         </div>
@@ -701,7 +737,10 @@
       <div
         class="w-full lg:w-2/3 mx-auto grid grid-cols-12 lg:gap-20 pt-16 border-t border-[#DEEBDF] mt-12 pb-28"
       >
-        <form class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form" method="POST">
+        <form
+          class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form"
+          method="POST"
+        >
           <div
             class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] whitespace-nowrap text-center lg:text-left"
           >
@@ -709,15 +748,32 @@
           </div>
           <div class="form-message col-span-12 lg:col-span-12"></div>
           <div class="transparent-input mt-7">
-            <input placeholder="Họ và tên" type="text" name="fullname" required/>
+            <input
+              placeholder="Họ và tên"
+              type="text"
+              name="fullname"
+              required
+            />
           </div>
           <div class="transparent-input mt-2">
-            <input placeholder="Số điện thoại" name="phone" required pattern="[0-9]{9,12}"/>
-            <input type="hidden" name="email" value="an_danh@ankhanhecomony.vn"/>
-            <input type="hidden" name="type" value="Đăng ký nhận thông tin"/>
+            <input
+              placeholder="Số điện thoại"
+              name="phone"
+              required
+              pattern="[0-9]{9,12}"
+            />
+            <input
+              type="hidden"
+              name="email"
+              value="an_danh@ankhanhecomony.vn"
+            />
+            <input type="hidden" name="type" value="Đăng ký nhận thông tin" />
           </div>
           <div class="mt-8 flex justify-center lg:justify-start">
-            <button type="submit" class="cursor-pointer bg-gold py-4 px-14 inline-block">
+            <button
+              type="submit"
+              class="cursor-pointer bg-gold py-4 px-14 inline-block"
+            >
               Gửi thông tin
             </button>
           </div>
@@ -734,6 +790,7 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -789,35 +846,36 @@
       });
     </script>
     <script>
-      $(document).ready(function() {
-        $('.contact-form').on('submit', function(e) {
+      $(document).ready(function () {
+        $(".contact-form").on("submit", function (e) {
           let _form = $(this);
           e.preventDefault();
 
           let formData = $(this).serialize();
-          let messageBox = $('.form-message', this);
+          let messageBox = $(".form-message", this);
 
-          messageBox.removeClass('success error').text('Đang gửi thông tin...');
+          messageBox.removeClass("success error").text("Đang gửi thông tin...");
 
           $.ajax({
-            url: '/form.php',
-            type: 'POST',
+            url: "/form.php",
+            type: "POST",
             data: formData,
-            dataType: 'json',
-            success: function(res, textStatus, xhr) {
+            dataType: "json",
+            success: function (res, textStatus, xhr) {
               if (xhr.status === 200) {
-                messageBox.addClass('success').text('✅ ' + res.message);
+                messageBox.addClass("success").text("✅ " + res.message);
                 _form[0].reset();
               } else {
-                messageBox.addClass('error').text('❌ ' + res.message);
+                messageBox.addClass("error").text("❌ " + res.message);
               }
             },
-            error: function(xhr) {
-              const msg = xhr.responseJSON?.message || '⚠️ Lỗi hệ thống. Vui lòng thử lại.';
-              messageBox.addClass('error').text(msg);
-            }
+            error: function (xhr) {
+              const msg =
+                xhr.responseJSON?.message ||
+                "⚠️ Lỗi hệ thống. Vui lòng thử lại.";
+              messageBox.addClass("error").text(msg);
+            },
           });
-
         });
       });
     </script>
