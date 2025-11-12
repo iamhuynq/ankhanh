@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="/public/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -27,9 +26,35 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
-      .form-message { text-align: center; margin-top: 15px; font-weight: bold; }
-      .success { color: green; }
-      .error { color: red; }
+      .form-message {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .form-message.success { color: #7bff8f; }
+      .form-message.error { color: #ff6666; }
+
+      button[disabled] {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+
+      .spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #fff;
+        border-top: 2px solid #007BFF;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
     </style>
   </head>
   <body class="text-white">
@@ -216,7 +241,7 @@
           <span class="text-[#FFD18D]">nhận thông tin dự án</span>
         </div>
 
-        <form class="grid grid-cols-12 mt-6 gap-3 contact-form" method="POST">
+        <form class="grid grid-cols-12 mt-6 gap-3 contact-form">
           <div class="form-message col-span-12 lg:col-span-12"></div>
           <div class="col-span-12 lg:col-span-3">
             <p>Họ và tên</p>
@@ -644,7 +669,7 @@
         FILE MẶT BẰNG DỰ ÁN CHẤT LƯỢNG CAO
       </p>
       <form
-        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form" method="POST"
+        class="grid grid-cols-12 gap-3 my-container mt-5 mx-auto px-4 lg:px-0 contact-form"
       >
         <div class="form-message col-span-12 lg:col-span-12"></div>
         <div
@@ -701,7 +726,7 @@
       <div
         class="w-full lg:w-2/3 mx-auto grid grid-cols-12 lg:gap-20 pt-16 border-t border-[#DEEBDF] mt-12 pb-28"
       >
-        <form class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form" method="POST">
+        <form class="col-span-12 lg:col-span-6 px-4 lg:px-0 contact-form">
           <div
             class="heading text-[32px] lg:text-[43px] text-[#FFF5E5] whitespace-nowrap text-center lg:text-left"
           >
@@ -768,6 +793,51 @@
         );
 
         elements.forEach((el) => observer.observe(el));
+
+        const forms = document.querySelectorAll('.contact-form');
+
+        forms.forEach(form => {
+          form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const messageBox = form.querySelector('.form-message');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            const formData = new FormData(form);
+
+            // Hiển thị trạng thái đang gửi
+            messageBox.classList.remove('success', 'error');
+            messageBox.textContent = 'Đang gửi thông tin...';
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span class="spinner"></span> Đang gửi...`;
+
+            try {
+              const response = await fetch('/form.php', {
+                method: 'POST',
+                body: formData,
+              });
+
+              const res = await response.json();
+
+              if (response.ok) {
+                messageBox.classList.add('success');
+                messageBox.textContent = '✅ ' + res.message;
+                form.reset();
+              } else {
+                messageBox.classList.add('error');
+                messageBox.textContent = '❌ ' + (res.message || 'Gửi thất bại!');
+              }
+            } catch (error) {
+              messageBox.classList.add('error');
+              messageBox.textContent = '⚠️ Lỗi hệ thống. Vui lòng thử lại.';
+              console.error('Form submit error:', error);
+            } finally {
+              // Khôi phục lại nút
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalBtnText;
+            }
+          });
+        });
+
       });
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
@@ -788,38 +858,6 @@
         },
       });
     </script>
-    <script>
-      $(document).ready(function() {
-        $('.contact-form').on('submit', function(e) {
-          let _form = $(this);
-          e.preventDefault();
 
-          let formData = $(this).serialize();
-          let messageBox = $('.form-message', this);
-
-          messageBox.removeClass('success error').text('Đang gửi thông tin...');
-
-          $.ajax({
-            url: '/form.php',
-            type: 'POST',
-            data: formData,
-            dataType: 'json',
-            success: function(res, textStatus, xhr) {
-              if (xhr.status === 200) {
-                messageBox.addClass('success').text('✅ ' + res.message);
-                _form[0].reset();
-              } else {
-                messageBox.addClass('error').text('❌ ' + res.message);
-              }
-            },
-            error: function(xhr) {
-              const msg = xhr.responseJSON?.message || '⚠️ Lỗi hệ thống. Vui lòng thử lại.';
-              messageBox.addClass('error').text(msg);
-            }
-          });
-
-        });
-      });
-    </script>
   </body>
 </html>
