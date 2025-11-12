@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>An Khánh Economy - Hơi Thở Xanh Sống An Lành</title>
     <link rel="preload" href="/public/images/banner.jpg" as="image" />
-    <link rel="preload" href="/public/style.css" as="style" />
+    <link rel="preload" href="/public/style.css?v=1" as="style" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="/public/style.css" rel="stylesheet" />
+    <link href="/public/style.css?v=1" rel="stylesheet" />
+      <link rel="icon" href="/favicon.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
