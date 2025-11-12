@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyFBh-cb6I_XXliWLe3E6NRNdIrdkUv0Z3qXTB5YFkCaPhps_3Z9s_3PfkLRge8ytw/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyyaWGgq8bjKgbp93tDPL59g4TsEgka_52GOnnYyPH5Y0x6D2mLkZRTO53aBCfxKS9MPQ/exec';
 
 // ====== HELPER ======
 function sanitizeInput(string $data): string {
