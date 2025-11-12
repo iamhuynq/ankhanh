@@ -30,16 +30,38 @@
     <!-- SECTION 1 -->
     <div class="relative z-20">
       <div
-        class="flex justify-between my-container absolute top-7 left-1/2 transform -translate-x-1/2 px-4 lg:px-0"
+        class="flex justify-between my-container absolute top-7 left-1/2 transform -translate-x-1/2 px-4 lg:px-0 z-10"
       >
-        <img src="/public/images/logo.png" loading="lazy" />
+        <img
+          src="/public/images/logo.png"
+          loading="lazy"
+          class="w-36 md:w-auto"
+        />
         <div
           class="items-center justify-between uppercase w-1/2 hidden lg:flex"
         >
-          <a href="#">Trang chủ</a>
-          <a href="#duan">360 dự án</a>
-          <a href="#tailieu">tài liệu</a>
-          <a href="#matbang">Mặt bằng dự án</a>
+          <p class="cursor-pointer menu-item">Trang chủ</p>
+          <p class="cursor-pointer menu-item" data-section="duan">360 dự án</p>
+          <p class="cursor-pointer menu-item" data-section="tailieu">
+            tài liệu
+          </p>
+          <p class="cursor-pointer menu-item" data-section="matbang">
+            Mặt bằng dự án
+          </p>
+        </div>
+        <button id="menu-btn" class="p-3 lg:hidden">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white my-1"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </button>
+        <div
+          class="absolute top-full left-0 w-full bg-[#005638] hidden shadow-lg p-4 uppercase"
+          id="menu-down"
+        >
+          <p>Trang chủ</p>
+          <p class="mt-1 menu-item" data-section="duan">360 dự án</p>
+          <p class="mt-1 menu-item" data-section="tailieu">tài liệu</p>
+          <p class="mt-1 menu-item" data-section="matbang">Mặt bằng dự án</p>
         </div>
       </div>
       <img
@@ -68,7 +90,7 @@
     <!-- SECTION 2 -->
     <div class="section-2 bg-cover bg-no-repeat relative pb-20 z-10">
       <div
-        class="lg:flex items-center justify-between gap-14 -mt-14 overflow-hidden"
+        class="lg:flex items-center justify-between 2xl:gap-14 -mt-8 2xl:-mt-14 overflow-hidden"
       >
         <div class="flex-1">
           <img
@@ -80,7 +102,7 @@
             height="65"
           />
         </div>
-        <div class="flex-1 px-4 lg:px-0">
+        <div class="flex-1 px-4 lg:px-0 md:pt-12">
           <div
             class="lg:pl-12 animate__animated my-animated"
             data-animation="animate__fadeInDown"
@@ -90,7 +112,7 @@
               loading="lazy"
               class="mx-auto lg:mx-0"
             />
-            <p class="text-sm mt-8 lg:w-2/3">
+            <p class="text-sm mt-8 w-full md:w-[90%] 2xl:w-2/3">
               An Khánh Ecomony tọa lạc tại trung tâm khu nhà giàu phía Tây Hà
               Nội, liền kề Mailand – Đại lộ Thăng Long.<br /><br />
               Dự án thừa hưởng hệ sinh thái tiện ích hoàn chỉnh và cộng đồng cư
@@ -138,7 +160,7 @@
               <p class="heading uppercase text-[32px] text-yellow">
                 tổng quan dự án
               </p>
-              <p class="text-sm mt-1 lg:w-2/3">
+              <p class="text-sm mt-1 w-full md:w-[90%] 2xl:w-2/3">
                 Được định vị trở thành khu đô thị liền kề – biệt thự mới tại
                 trung tâm phía Tây Hà Nội, An Khánh Economy là dấu ấn tiên phong
                 trong việc kiến tạo môi trường sống xanh, hiện đại và đồng bộ
@@ -441,7 +463,7 @@
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="/public/images/slide-1.png" loading="lazy" />
+                  <img src="/public/images/slide-4.jpg" loading="lazy" />
                 </div>
                 <div class="swiper-slide">
                   <img src="/public/images/slide-2.jpg" loading="lazy" />
@@ -450,7 +472,7 @@
                   <img src="/public/images/slide-3.jpg" loading="lazy" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/slide-4.jpg" loading="lazy" />
+                  <img src="/public/images/slide-1.png" loading="lazy" />
                 </div>
                 <div class="swiper-slide">
                   <img src="/public/images/slide-5.jpg" loading="lazy" />
@@ -470,7 +492,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                  src="/public/images/slide-1.png"
+                  src="/public/images/slide-4.jpg"
                   class="object-cover w-full aspect-square"
                   loading="lazy"
                 />
@@ -491,7 +513,7 @@
               </div>
               <div class="swiper-slide">
                 <img
-                  src="/public/images/slide-4.jpg"
+                  src="/public/images/slide-1.png"
                   class="object-cover w-full aspect-square"
                   loading="lazy"
                 />
@@ -870,12 +892,16 @@
       });
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
+        loop: true,
+        initialSlide: 3,
         slidesPerView: window.innerWidth < 1024 ? 5 : 7,
         freeMode: true,
         watchSlidesProgress: true,
       });
       var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
+        loop: true,
+        initialSlide: 3,
         navigation: {
           nextEl:
             window.innerWidth < 1024 ? ".swiper-button-next" : ".arrow-next",
@@ -885,6 +911,24 @@
         thumbs: {
           swiper: swiper,
         },
+      });
+      const btnMenu = document.getElementById("menu-btn");
+      const menuDown = document.getElementById("menu-down");
+      btnMenu.addEventListener("click", function () {
+        menuDown.classList.toggle("hidden");
+      });
+      document.querySelectorAll(".menu-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          const sectionId = item.dataset.section;
+          const section = document.getElementById(sectionId);
+          menuDown.classList.add("hidden");
+          if (section) {
+            section.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
       });
     </script>
   </body>
