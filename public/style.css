@@ -802,6 +802,10 @@ video {
   gap: 1.25rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -1229,6 +1233,17 @@ input {
   .my-container {
     max-width: 1145px;
   }
+}
+
+.my-animated {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease;
+  will-change: transform, opacity;
+  animation-fill-mode: both;
+}
+
+.my-animated.is-visible {
+  opacity: 1 !important;
 }
 
 @media (min-width: 768px) {

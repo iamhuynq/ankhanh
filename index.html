@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="/public/style.css" rel="stylesheet" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -46,31 +50,41 @@
         width="1665"
         height="937"
       />
-      <img
-        src="/public/images/economy.png"
-        class="absolute top-36 left-1/2 transform -translate-x-1/2"
-        loading="lazy"
-      />
-      <img
-        src="/public/images/in-banner.png"
-        class="absolute top-40 left-1/2 transform -translate-x-1/2"
-        loading="lazy"
-      />
+      <div class="absolute top-36 left-1/2 transform -translate-x-1/2">
+        <img
+          src="/public/images/economy.png"
+          class="animate__animated animate__zoomIn"
+          loading="lazy"
+        />
+      </div>
+      <div class="absolute top-40 left-1/2 -translate-x-1/2">
+        <img
+          src="/public/images/in-banner.png"
+          class="animate__animated animate__zoomIn"
+          loading="lazy"
+        />
+      </div>
     </div>
     <!-- SECTION 2 -->
     <div class="section-2 bg-cover bg-no-repeat relative pb-20 z-10">
-      <div class="lg:flex items-center justify-between gap-14 -mt-14">
+      <div
+        class="lg:flex items-center justify-between gap-14 -mt-14 overflow-hidden"
+      >
         <div class="flex-1">
           <img
             src="/public/images/section-2.png"
-            class="w-full"
+            class="w-full animate__animated my-animated"
+            data-animation="animate__fadeInLeft"
             loading="lazy"
             width="67"
             height="65"
           />
         </div>
         <div class="flex-1 px-4 lg:px-0">
-          <div class="lg:pl-12">
+          <div
+            class="lg:pl-12 animate__animated my-animated"
+            data-animation="animate__fadeInDown"
+          >
             <img
               src="/public/images/105.png"
               loading="lazy"
@@ -117,7 +131,10 @@
             </div>
           </div>
           <div class="mt-8">
-            <div class="lg:pl-12">
+            <div
+              class="lg:pl-12 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
               <p class="heading uppercase text-[32px] text-yellow">
                 tổng quan dự án
               </p>
@@ -136,7 +153,10 @@
           <div
             class="my-container mx-auto md:flex justify-between gap-28 text-sm mt-8 lg:mt-0"
           >
-            <div class="pl-5 lg:h-[320px] border-linear">
+            <div
+              class="pl-5 lg:h-[320px] border-linear animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
               <div class="text-yellow uppercase font-semibold">Tên dự án</div>
               <p class="text-white mt-1">
                 An Khánh Economy<br />
@@ -145,7 +165,11 @@
                 Đơn vị phát triển: Reatimes Holding
               </p>
             </div>
-            <div class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0">
+            <div
+              class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+              data-delay="0.5s"
+            >
               <div class="text-yellow uppercase font-semibold">
                 Vị trí - quy mô
               </div>
@@ -156,7 +180,11 @@
                 hữu lâu dài
               </p>
             </div>
-            <div class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0">
+            <div
+              class="pl-5 lg:h-[320px] border-linear mt-4 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+              data-delay="1s"
+            >
               <div class="text-yellow uppercase font-semibold">
                 Cơ cấu sản phẩm
               </div>
@@ -233,7 +261,10 @@
       <div
         class="my-container mx-auto lg:flex text-sm gap-28 items-center mt-1 px-4 lg:px-0"
       >
-        <div class="uppercase whitespace-nowrap text-center leading-[normal]">
+        <div
+          class="uppercase whitespace-nowrap text-center leading-[normal] animate__animated my-animated"
+          data-animation="animate__fadeInLeft"
+        >
           <span class="text-[32px] lg:text-[52px] heading text-yellow"
             >Vị trí</span
           >
@@ -249,7 +280,10 @@
           <span class="text-[24px] pt-1 text-[#C2DFD9]">phía tây hà nội</span>
         </div>
 
-        <p class="mt-4 lg:mt-0">
+        <p
+          class="mt-4 lg:mt-0 animate__animated my-animated"
+          data-animation="animate__fadeInDown"
+        >
           Nằm tại trung tâm khu vực phát triển năng động bậc nhất phía Tây Thủ
           đô, An Khánh Ecomony sở hữu vị trí giao thoa chiến lược với mạng lưới
           hạ tầng đồng bộ và hiện đại. Dự án liền kề Đại lộ Thăng Long, kết nối
@@ -299,7 +333,10 @@
           <div
             class="my-container mx-auto lg:flex gap-32 items-center px-4 lg:px-0"
           >
-            <p class="text-sm">
+            <p
+              class="text-sm animate__animated my-animated"
+              data-animation="animate__fadeInUp"
+            >
               Từ An Khánh Ecomony, cư dân dễ dàng tiếp cận mọi tiện ích cao cấp
               chỉ trong vài phút di chuyển.<br />
               Trong bán kính 1–3 km, bao quanh dự án là hệ thống trường học quốc
@@ -316,7 +353,8 @@
               riêng tư.
             </p>
             <div
-              class="uppercase whitespace-nowrap leading-[auto] lg:leading-[36px] mt-8 lg:mt-0"
+              class="uppercase whitespace-nowrap leading-[auto] lg:leading-[36px] mt-8 lg:mt-0 animate__animated my-animated"
+              data-animation="animate__fadeInRight"
             >
               <span class="text-[32px] lg:text-[52px] heading text-yellow"
                 >liên kết vùng</span
@@ -345,7 +383,10 @@
       <div
         class="lg:absolute top-0 left-0 w-full px-4 lg:px-0 pb-[450px] lg:pb-0 pt-4 lg:pt-0"
       >
-        <div class="my-container mx-auto lg:-mt-40">
+        <div
+          class="my-container mx-auto lg:-mt-40 animate__animated my-animated"
+          data-animation="animate__zoomIn"
+        >
           <div class="relative">
             <img
               src="/public/images/arrow.png"
@@ -650,6 +691,39 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".animate__animated");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const animation = el.dataset.animation;
+                const delay = el.dataset.delay || "0s";
+                const duration = el.dataset.duration || "1s";
+
+                el.style.setProperty("--animate-delay", delay);
+                el.style.setProperty("--animate-duration", duration);
+
+                el.classList.remove("is-visible", animation);
+
+                const delayMs = parseFloat(delay) * 1000;
+                setTimeout(() => {
+                  el.classList.add("is-visible", animation);
+                }, delayMs);
+
+                observer.unobserve(el);
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+          }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+      });
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
         slidesPerView: window.innerWidth < 1024 ? 5 : 7,

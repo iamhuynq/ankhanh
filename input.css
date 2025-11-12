@@ -164,3 +164,14 @@ input {
     max-width: 1145px;
   }
 }
+
+.my-animated {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease;
+  will-change: transform, opacity;
+  animation-fill-mode: both;
+}
+
+.my-animated.is-visible {
+  opacity: 1 !important;
+}
