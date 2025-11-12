@@ -1250,6 +1250,20 @@ input {
   opacity: 1 !important;
 }
 
+.form-message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -1259,6 +1273,10 @@ input {
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:col-span-12 {
+    grid-column: span 12 / span 12;
   }
 
   .lg\:col-span-3 {

@@ -179,3 +179,17 @@ input {
 .my-animated.is-visible {
   opacity: 1 !important;
 }
+
+.form-message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
